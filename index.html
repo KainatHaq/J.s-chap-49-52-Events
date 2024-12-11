@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Signup Form</h2>
+        <form id="signup-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Sign Up</button>
+        </form>
+
+        <div id="user-info" style="display:none;">
+            <h3>User Info:</h3>
+            <p><strong>Username:</strong> <span id="display-username"></span></p>
+            <p><strong>Email:</strong> <span id="display-email"></span></p>
+            <p><strong>Password:</strong> <span id="display-password"></span></p>
+        </div>
+    </div>
+
+    <div class="item">
+        <h2>OppO rRenon10 pro</h2>
+        <h1>2.Click the below link to read more: </h1>
+
+        <img src="./img1.webp" alt="mobile">
+        <p id="item-detail">
+            Size and Weight. Height. about 162.3mm · Storage. Ram and Rom Capacities. 12GB + 256GB · Display. Size. 6.7"
+            · Camera. Rear. Main camera: 50MP; f/1.8; FOV 84.4°
+            <span id="more-text" style="display:none;">
+                The upcoming model will be equipped with the powerful Snapdragon 778G 5G (6 nm) chipset. A massive 12 GB
+                of RAM will be present in this Oppo Reno's 10 Pro.
+                Rs 168,999.00
+            </span>
+        </p>
+        <button id="read-more-btn">Read More</button>
+    </div>
+
+
+    <div class="container">
+        <h1>Student Details</h1>
+
+        <!-- Form for adding/editing student details -->
+        <form id="student-form">
+            <input type="hidden" id="editing-index" value="-1">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter name" required>
+            <label for="age">Age:</label>
+            <input type="number" id="age" placeholder="Enter age" required>
+            <label for="grade">Grade:</label>
+            <input type="text" id="grade" placeholder="Enter grade" required>
+            <button type="submit" id="submit-button">Add Student</button>
+        </form>
+
+
+        <table id="student-table" border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Grade</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+
+
+    <script src="/style.js"></script>
+</body>
+
+</html>
